@@ -6,8 +6,12 @@ using System.Threading.Tasks;
 
 namespace AnimalClasses
 {
-    class Robin : Animal
+    class Robin : Animal , IFlyable
     {
+        public void Fly()
+        {
+            Console.WriteLine("I have to fly away , bye");
+        }
 
         public void Sing()
         {
