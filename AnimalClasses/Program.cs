@@ -17,7 +17,17 @@ namespace AnimalClasses
             beast.Sing();
 
 
-            Console.WriteLine(beast.ToString()); 
+            Console.WriteLine(beast.ToString());
+            Console.WriteLine();
+
+
+            Dog fido = new Dog(false, 25);
+
+            fido.Greet();
+            fido.Talk();
+            fido.Sing();
+            fido.Fetch("Stick");
+            Console.WriteLine(fido.ToString());
 
             Console.ReadKey();
 
