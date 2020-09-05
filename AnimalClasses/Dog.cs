@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace AnimalClasses
 {
-    class Dog : Animal
+    class Dog : Animal , IDomesticated
     {
         public Dog(bool isAlive, int weight) : base(isAlive, weight)
         {
@@ -33,5 +33,14 @@ namespace AnimalClasses
             Console.WriteLine($"Here you go, here is your {thing}");
         }
 
+        public void TouchMe()
+        {
+            Console.WriteLine("Please scratch behind my ears");
+        }
+
+        public void FeedMe()
+        {
+            Console.WriteLine("Suppertime! ");
+        }
     }
 }
